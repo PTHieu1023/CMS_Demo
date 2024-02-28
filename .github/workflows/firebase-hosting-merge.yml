@@ -10,8 +10,8 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Move to subfolder
-        run: cd ${{ github.workspace }}/CMS_Demo/Source/client
+      - name: ls workspace
+        run: ls ${{github.workspace}}
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0

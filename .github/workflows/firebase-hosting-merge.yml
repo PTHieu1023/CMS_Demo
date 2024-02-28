@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Move to client folder
-        run: cd ${{github.workspace}}/Source/client/
+        run: cd /home/runner/work/CMS_Demo/Source/client/
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0

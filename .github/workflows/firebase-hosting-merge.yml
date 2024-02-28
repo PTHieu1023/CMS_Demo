@@ -24,3 +24,5 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CMS_DEMO_40F13 }}"
           channelId: live
           projectId: cms-demo-40f13
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

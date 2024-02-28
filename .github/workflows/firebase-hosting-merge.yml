@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: ls workspace
         run: ls /home/runner/work/CMS_Demo/CMS_Demo/Source/client
+      - name: move to client folder
+        run: cd /home/runner/work/CMS_Demo/CMS_Demo/Source/client
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

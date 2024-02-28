@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ls workspace
-        run: ls /home/runner/work/CMS_Demo
+        run: ls /home/runner/work/CMS_Demo/CMS_Demo
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

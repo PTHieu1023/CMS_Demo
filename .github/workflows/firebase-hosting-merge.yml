@@ -19,7 +19,7 @@ jobs:
       - name: deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: ${{ github.workspace }}/Source/client/firebase.json
+          entryPoint: ${{ github.workspace }}/Source/client
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_CMS_DEMO_40F13 }}"
           channelId: live
